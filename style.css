@@ -3,7 +3,7 @@ html {
 	height: 100%;
 	margin: 0;
 	white-space: nowrap;
-	background-color: lightskyblue;
+	/* background-color: lightskyblue; */
 	max-width: 500px;
 	margin: auto;
 }
@@ -90,3 +90,25 @@ h1 {
 img {
 	vertical-align: top;
 }
+
+/* Chrome10+,Safari5.1+ */
+body {
+	/*Colors*/
+   background: -webkit-linear-gradient(#41f4e2 30%, #41f4e2 30%,#42cef4 60%);
+	  -webkit-animation-name: fun-time-awesome;
+	  background-size: 1000%;
+	  -webkit-animation-name: fun-time-awesome;
+	
+	/*BG Scroll speed*/
+	  -webkit-animation-duration: 2s;
+	  -webkit-animation-timing-function: linear;
+	  -webkit-animation-iteration-count: infinite;
+	  -webkit-animation-direction: alternate;
+	  -webkit-animation-play-state: running;
+  }
+  
+  /* Chrome, Safari */
+   /* Scrolling function*/
+  @-webkit-keyframes fun-time-awesome {
+	100% {background-position: left bottom;}
+  }
